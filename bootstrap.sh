@@ -28,6 +28,9 @@ su -c 'apt-get install -y ruby-dev'
 # Installing valgrind (Memcheck, a memory error detector)
 su -c 'apt-get install -y valgrind'
 
+# Install exuberant-ctags
+su -c 'apt-get install -y exuberant-ctags'
+
 sudo -H -u vagrant bash -c 'cp /vagrant/postinstall.sh ~'
 sudo -H -u vagrant bash -c 'chmod 755 ~/postinstall.sh'
 sudo -H -u vagrant bash -c '~/postinstall.sh'
