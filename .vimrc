@@ -31,6 +31,8 @@ Plugin 'moll/vim-node'
 Plugin 'fatih/vim-go'
 Plugin 'wting/rust.vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'kien/ctrlp.vim'
+Plugin 'bling/vim-airline'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -46,3 +48,7 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+
+" Enable vim-airline
+let g:airline#extensions#tabline#enabled=1
+set laststatus=2
