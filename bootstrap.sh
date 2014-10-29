@@ -25,6 +25,9 @@ su -c 'apt-get install -y vim-nox'
 # Installing ruby-dev
 su -c 'apt-get install -y ruby-dev'
 
+# Installing valgrind (Memcheck, a memory error detector)
+su -c 'apt-get install -y valgrind'
+
 sudo -H -u vagrant bash -c 'cp /vagrant/postinstall.sh ~'
 sudo -H -u vagrant bash -c 'chmod 755 ~/postinstall.sh'
 sudo -H -u vagrant bash -c '~/postinstall.sh'
