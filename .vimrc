@@ -52,3 +52,6 @@ filetype plugin indent on    " required
 " Enable vim-airline
 let g:airline#extensions#tabline#enabled=1
 set laststatus=2
+
+" set colorscheme
+colors evening

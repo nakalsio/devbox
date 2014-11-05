@@ -34,9 +34,15 @@ su -c 'apt-get install -y exuberant-ctags'
 # Install comment drawing boxes
 su -c 'apt-get install -y boxes'
 
+# Install zsh
+su -c 'apt-get install -y zsh'
+
 sudo -H -u vagrant bash -c 'cp /vagrant/postinstall.sh ~'
 sudo -H -u vagrant bash -c 'chmod 755 ~/postinstall.sh'
 sudo -H -u vagrant bash -c '~/postinstall.sh'
+
+# Setup zsh default
+sudo chsh -s $(which zsh) vagrant
 
 echo "==================================="
 echo "|                                 |"

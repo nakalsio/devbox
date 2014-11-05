@@ -1,9 +1,11 @@
-#!/usr/bin/env bash
+#!/usr/bin/zsh
+
+# Setup oh-my-zsh
+curl -L http://install.ohmyz.sh | sh
 
 # Setting up go env
 mkdir -p ~/gocode
-touch ~/.bash_profile
-echo "export GOPATH=~/gocode" >> ~/.bash_profile
+echo "export GOPATH=~/gocode" >> ~/.zshrc
 
 # Installing Vundle and my plugins
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
